@@ -1,0 +1,336 @@
+/* Global */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App container */
+.App {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.App h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+/* Formulario de Categoría */
+.categoria-form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.categoria-form div {
+    margin-bottom: 15px;
+}
+
+.categoria-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.categoria-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.categoria-form button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000; /* Letras negras */
+    transition: background-color 0.3s ease;
+}
+
+.categoria-form button[type="submit"] {
+    background-color: #007bff;  /* Fondo azul para submit */
+}
+
+.categoria-form button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.categoria-form button[type="button"] {
+    background-color: #6c757d;
+    margin-left: 10px;
+}
+
+.categoria-form button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+/* Lista de Categorías */
+.categoria-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.categoria-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.categoria-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Ítem de Categoría */
+.categoria-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+}
+
+.categoria-item:last-child {
+    border-bottom: none;
+}
+
+.categoria-item h3 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+.categoria-item p {
+    margin: 0;
+    color: #6c757d;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.categoria-item button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #000; /* Letras negras */
+    transition: background-color 0.3s ease;
+}
+
+.categoria-item .edit-btn {
+    background-color: #007bff; /* Edit: fondo azul */
+    margin-right: 5px;
+    color: #000;
+}
+
+.categoria-item .edit-btn:hover {
+    background-color: #0069d9;
+}
+
+.categoria-item .delete-btn {
+    background-color: #dc3545; /* Delete: fondo rojo */
+    color: #000;
+}
+
+.categoria-item .delete-btn:hover {
+    background-color: #c82333;
+}
+.categoria-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-form div {
+    margin-bottom: 20px;
+}
+
+.categoria-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.categoria-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.categoria-form input:focus {
+    border-color: #007bff;
+}
+
+.categoria-form button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.categoria-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.categoria-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.categoria-form button[type="button"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.categoria-form button[type="button"]:hover {
+    background-color: #545b62;
+}
+
+.subcategoria-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subcategoria-form div {
+    margin-bottom: 20px;
+  }
+  
+  .subcategoria-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .subcategoria-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .subcategoria-form input:focus {
+    border-color: #007bff;
+  }
+  
+  .subcategoria-form button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000;
+  }
+  
+  .subcategoria-form button[type="submit"] {
+    background-color: #28a745;
+  }
+  
+  .subcategoria-form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Lista de SubCategorías */
+  .subcategoria-list {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .subcategoria-list h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .subcategoria-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+  }
+  
+  .subcategoria-item:last-child {
+    border-bottom: none;
+  }
+  
+  .subcategoria-item h3 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.1rem;
+  }
+  
+  .subcategoria-item p {
+    margin: 0;
+    color: #6c757d;
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  .subcategoria-item button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000;
+  }
+  
+  .subcategoria-item .edit-btn {
+    background-color: #007bff;
+    margin-right: 5px;
+  }
+  
+  .subcategoria-item .edit-btn:hover {
+    background-color: #0069d9;
+  }
+  
+  .subcategoria-item .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .subcategoria-item .delete-btn:hover {
+    background-color: #c82333;
+  }
